@@ -9,7 +9,8 @@
     var App = window.App;
     var Truck = App.Truck;
     var DataStore = App.DataStore;
-    var RemoteDataStore = App.RemoteDataStore;
+    //var RemoteDataStore = App.RemoteDataStore;
+    var firebaseremotedata = App.firebaseremotedata;
     var FormHandler = App.FormHandler;
     var Validation = App.Validation;
     var CheckList = App.CheckList;
