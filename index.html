@@ -95,6 +95,8 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  
+  firebase.settings({timestampInSnapshots: true})
 </script>
 </body>
 </html>
