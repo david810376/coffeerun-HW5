@@ -14,10 +14,12 @@
     var FormHandler = App.FormHandler;
     var Validation = App.Validation;
     var CheckList = App.CheckList;
-
-    var remoteDS = new RemoteDataStore(SERVER_URL);
-    // var truck = new Truck('ncc-1701', new DataStore());
-    var truck = new Truck('ncc-1701', remoteDS);
+    
+    //var remoteDS = new RemoteDataStore(SERVER_URL);
+    var remoteFireBase = new firebaseremotedata();
+   // var truck = new Truck('ncc-1701', new DataStore());
+   // var truck = new Truck('ncc-1701', remoteDS);
+    var truck = new Truck('ncc-1701', remoteFireBase);
     window.truck = truck;
     var checkList = new CheckList(CHECKLIST_SELECTOR);
     checkList.addClickHandler(truck.deliverOrder.bind(truck));
